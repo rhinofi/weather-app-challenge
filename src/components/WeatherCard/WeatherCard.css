@@ -1,0 +1,29 @@
+.WeatherCard {
+  background-color: rgb(37, 37, 37);
+  width: 500px;
+  border-radius: 10px;
+  padding: 32px;
+  display: grid;
+  grid-template-areas:
+    'city time-zone'
+    'temperature temperature'
+    'wind .';
+}
+.city {
+    grid-area: city;
+    text-align: left;
+}
+
+.time-zone {
+  grid-area: time-zone;
+  text-align: right;
+}
+
+.temperature {
+  grid-area: temperature;
+}
+
+.wind {
+  grid-area: wind;
+  text-align: left;
+}
